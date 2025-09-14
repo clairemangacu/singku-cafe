@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singku Cafe - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Singku Cafe Logo">
+      </a>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="feature.html">Features</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero for Menu -->
+  <header class="hero menu-hero">
+    <div class="hero-content">
+      <h1>Our Menu</h1>
+      <p>Hand-crafted drinks & freshly baked treats, made with love.</p>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <h2>Discover Our Favorites</h2>
+    <p>Browse our best-selling coffee, pastries, and treats.</p>
+
+    <!-- Search and Filter -->
+    <div class="menu-controls">
+      <input type="text" id="search" placeholder="Search menu...">
+      <select id="filter">
+        <option value="all">All Categories</option>
+        <option value="coffee">Coffee</option>
+        <option value="non-coffee">Non-Coffee</option>
+      </select>
+      <select id="sort">
+        <option value="default">Sort by</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+      </select>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-items">
+      <div class="menu-card" data-category="coffee" data-price="190">
+        <img src="images/singku.png" alt="Espresso">
+        <h3>Singku Coffee</h3>
+        <p>Strong and bold single-shot espresso.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="coffee" data-price="190">
+        <img src="images/spanish.png" alt="Latte">
+        <h3>Spanish Latte</h3>
+        <p>Creamy blend of espresso and milk.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="coffee" data-price="200">
+        <img src="images/dirtyoreo.png" alt="Cappuccino">
+        <h3>Dirty Oreo Foam</h3>
+        <p>Rich espresso topped with foamy milk.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="coffee" data-price="190">
+        <img src="images/seasalt.png" alt="Sea Salt Latte">
+        <h3>Sea Salt Latte</h3>
+        <p>Refreshing balance of espresso, milk, and a pinch of sea salt.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="160">
+        <img src="images/matcha.png" alt="Matcha">
+        <h3>Matcha</h3>
+        <p>Earthy, creamy, and energizing green tea blend.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="190">
+        <img src="images/biscoff.png" alt="Biscoff Latte">
+        <h3>Biscoff Latte</h3>
+        <p>Sweet, spiced latte with Biscoff flavor.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="200">
+        <img src="images/redvelvet.png" alt="Red Velvet">
+        <h3>Red Velvet</h3>
+        <p>Smooth, velvety drink with a hint of cocoa.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="160">
+        <img src="images/strawberry.png" alt="Strawberry Lemonade">
+        <h3>Strawberry Lemonade</h3>
+        <p>Fruity, refreshing, and perfect for sunny days.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: ₱<span id="total">0</span></p>
+    <button id="checkout">Checkout</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Singku Cafe. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
